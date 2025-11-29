@@ -3,7 +3,8 @@
 - Add the correctly translated **lang.`lang`.txt** file of the proper length to the **translate** folder.
 - If needed, overwrite **`font.ttf`** in the **font** folder.
 - Update **`config.txt`** to the desired target values.
-- Check the release items.
+- Open the **`Actions`** tab and click **`Run workflow`** to start the build manually.
+- Check the Pre-release items.
 
 ```
 # Set the target DBI version.

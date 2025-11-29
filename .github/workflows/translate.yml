@@ -1,9 +1,7 @@
 name: Translate & Release
 
 on:
-  push:
-    paths:
-      - "config.txt"
+  workflow_dispatch:
 
 jobs:
   translate:
@@ -142,5 +140,6 @@ jobs:
         name: DBI ${{ steps.cfg.outputs.ver }}
         body: ${{ steps.history.outputs.log }}
         files: release/*.zip
+        prerelease: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
